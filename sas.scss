@@ -1,0 +1,142 @@
+body {
+    display: grid;
+  place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: powderblue;
+    position: relative;
+}
+.container{
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+ min-height: 200px;
+    background-color: rgb(29, 115, 29);
+     display: grid; 
+        place-items: center;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+          line-height: 1.6;
+   
+      font-family: 'Poppins', sans-serif;
+      
+   
+}
+.main2{
+    display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #333;
+  padding: 10px 0;
+  margin: 0;
+    line-height: 1.6;
+      text-align: justify;
+      font-family: 'Poppins', sans-serif;
+      
+  
+  }
+   
+
+
+
+.text {
+  display: flex;
+  gap: 20px;
+}
+
+.text a {
+  position: relative;
+  text-decoration: none;
+  color: white; 
+  font-size: 18px;
+
+  transition: color 0.3s ease; 
+}
+
+
+.text a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: green;
+  transform: scaleX(0);
+  transform-origin: center; 
+  transition: transform 0.3s ease;
+}
+
+
+.text a:hover {
+  color: black; 
+}
+
+.text a:hover::after {
+  transform: scaleX(1); 
+}
+    
+
+section {
+    font-size: 1.1em;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+
+
+
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+@media (max-width: 408px) {
+  body {
+    background-color: lightblue;
+  }
+}
